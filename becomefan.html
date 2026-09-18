@@ -1,143 +1,556 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Become a Fellow O.P. Fan!</title>
 </head>
+
+<body>  
   <header>
     <div align="center">
       <img src="IMAGES/One_Piece_Anime_Logo.svg" alt="https://onepiece.fandom.com/wiki/One_Piece_(Anime)?file=One_Piece_Anime_Logo.png" width="30%">
     </div>
-    <h1>The One Piece is Real!</h1>
+    <h1 align="center">The One Piece is Real!</h1>
   </header>
+
+  <br>
+  <hr>
   <main>
     <section id="adventure">
-      <div id="joincrew">
+      <div class="joincrew">
         <h2>Join the Straw Hat Crew!</h2>
-        <form onsubmit="return false;">
-          <label for="alias">
-            Pirate Name:
-          </label>
-          <br>
-          <input type="text" id="alias" name="alias" placeholder="e.g., Straw Hat Monkey" size=35 required><br>
-          <br>
-          <label for="role">
-            Desired Crew Role:
-          </label>
-          <br>
-          <select id="role" name="role" width="100%">
-            <option value="captain">Captain</option>
-            <option value="swordsman">Swordsman</option>
-            <option value="navigator">Navigator</option>
-            <option value="cook">Cook</option>
-            <option value="sniper">Sniper</option>
-            <option value="doctor">Doctor</option>
-            <option value="musician">Musician</option>
-            <option value="shipwright">Shipwright</option>
-          </select>
-          <br>
-          <br>
-        
-          <label for="devil-fruit">
-            Dream Devil Fruit Power:</label>
-          <br>
-          <input type="text" id="devil-fruit" name="devil-fruit" placeholder="e.g., Flame-Flame Fruit" size=35>
-          <br>
-          <br>
-          <div align="center">
-            <button type="submit">
-            Set Sail!
-          </button>
-          </div>
-        </form>
+
+        <table align="center">
+          <tr>
+            <td>
+              <form>
+                <fieldset>
+                  <legend>
+                    <strong>🏴‍☠️ Pirate Crew Application</strong>
+                  </legend>
+                  <p>
+                    <label for="alias">
+                      <strong>Pirate Name:</strong>
+                    </label>
+                    <br>
+
+                    <input
+                      type="text"
+                      id="alias"
+                      name="alias"
+                      placeholder="e.g., Straw Hat Monkey"
+                      size="50"
+                      required
+                    >
+                  </p>
+                  <p>
+                    <label for="real-name">
+                      <strong>Real Name:</strong>
+                    </label>
+                    <br>
+
+                    <input
+                      type="text"
+                      id="real-name"
+                      name="real-name"
+                      placeholder="Enter your name"
+                      size="50"
+                    >
+                  </p>
+                  <p>
+                    <label for="email">
+                      <strong>Den Den Mushi Contact:</strong>
+                    </label>
+                    <br>
+
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="🐌📞yourname@example.com"
+                      size="50"
+                    >
+                  </p>
+                  <p>
+                    <label for="role">
+                      <strong>Desired Crew Role:</strong>
+                    </label>
+                    <br>
+
+                    <select id="role" name="role">
+                      <option value="">-- Choose your role --</option>
+                      <option value="captain">Captain</option>
+                      <option value="vice-captain">Vice Captain</option>
+                      <option value="swordsman">Swordsman</option>
+                      <option value="navigator">Navigator</option>
+                      <option value="cook">Cook</option>
+                      <option value="sniper">Sniper</option>
+                      <option value="doctor">Doctor</option>
+                      <option value="archaeologist">Archaeologist</option>
+                      <option value="musician">Musician</option>
+                      <option value="shipwright">Shipwright</option>
+                      <option value="helmsman">Helmsman</option>
+                    </select>
+                  </p>
+                  <p>
+                    <label for="devil-fruit">
+                      <strong>Dream Devil Fruit Power:</strong>
+                    </label>
+                    <br>
+
+                    <input
+                      type="text"
+                      id="devil-fruit"
+                      name="devil-fruit"
+                      placeholder="e.g., Flame-Flame Fruit"
+                      size="50"
+                    >
+                  </p>
+                  <p>
+                    <strong>Are you a Devil Fruit user?</strong>
+                    <br>
+
+                    <input
+                      type="radio"
+                      id="fruit-yes"
+                      name="fruit-user"
+                      value="yes"
+                    >
+                    <label for="fruit-yes">Yes</label>
+
+                    <input
+                      type="radio"
+                      id="fruit-no"
+                      name="fruit-user"
+                      value="no"
+                    >
+                    <label for="fruit-no">No</label>
+                  </p>
+                  <p>
+                    <label for="haki">
+                      <strong>Haki Ability:</strong>
+                    </label>
+                    <br>
+
+                    <select id="haki" name="haki">
+                      <option value="none">None</option>
+                      <option value="observation">Observation Haki</option>
+                      <option value="armament">Armament Haki</option>
+                      <option value="conquerors">Conqueror's Haki</option>
+                      <option value="all">All Three</option>
+                    </select>
+                  </p>
+                  <p>
+                    <label for="bounty">
+                      <strong>Desired Bounty:</strong>
+                    </label>
+                    <br>
+
+                    <input
+                      type="number"
+                      id="bounty"
+                      name="bounty"
+                      placeholder="e.g., 300000000"
+                      min="0"
+                    >
+                    Berries
+                  </p>
+                  <p>
+                    <label for="dream">
+                      <strong>What's your dream?</strong>
+                    </label>
+                    <br>
+
+                    <textarea
+                      id="dream"
+                      name="dream"
+                      rows="6"
+                      cols="50"
+                      placeholder="Tell us about your dream..."
+                    ></textarea>
+                  </p>
+                  <p>
+                    <label for="reason">
+                      <strong>Why should we let you join the crew?</strong>
+                    </label>
+
+                    <br>
+
+                    <textarea
+                      id="reason"
+                      name="reason"
+                      rows="6"
+                      cols="50"
+                      placeholder="Tell us what makes you worthy of joining..."
+                    ></textarea>
+                  </p>
+                  <hr>
+                  <h3>🍎 Not sure what Devil Fruit suits you?</h3>
+
+                  <p>
+                    Explore the Devil Fruit Encyclopedia before choosing your power:
+                    <br>
+
+                    <a href="devilfruits.html" target="_blank">
+                      Open Devil Fruit Encyclopedia
+                    </a>
+                  </p>
+
+                  <p>
+                    <button type="button">
+                      🏴‍☠️ Set Sail!
+                    </button>
+                  </p>
+                </fieldset>
+              </form>
+            </td>
+          </tr>
+        </table>
       </div>
+
       <br>
       <br>
       <br>
       <hr>
-      <blockquote>
-        <img src="IMAGES/graphics/becomefan1.jpg" alt="sun god nika happy" width="100%">
-        <p>Tomorrow will be better. If not, I'll say it again.</p>
-        <cite>- Monkey D. Luffy
-        <br>
-        <br>
-        <br>
-        <img src="IMAGES/graphics/becomefan2.jpg" alt="crew on group pic" width="100%">
-        <p>Being alone is more painful than getting hurt.</p>
-        <cite>- Monkey D. Luffy</cite>    
-        <br>
-        <br>
-        <br>
-        <img src="IMAGES/graphics/becomefan3.jpg" alt="reminisce young luffy brothers" width="100%">
-        <p>Anyone who tries to make everyone happy is admirable.</p>
-        <cite>- Monkey D. Luffy</cite>
-        <br>
-        <br>
-        <br>
-        <img src="IMAGES/graphics/becomefan4.jpg" alt="crew ready to sail" width="100%">
-        <p>If you don't take risk, you can't create a future.</p>
-        <cite>- Monkey D. Luffy</cite>
-        <br>
-        <br>
-        <br>
-        <img src="IMAGES/graphics/becomefan5.jpg" alt="crew on the job" width="100%">
-        <p>As long as I live I have infinite chance.</p>
-        <cite>- Monkey D. Luffy</cite>
-      </blockquote>
+      <table width="100%">
+        <tr>
+          <td width="33%">
+            <blockquote>
+              <img
+                src="IMAGES/graphics/becomefan1.jpg"
+                alt="sun god nika happy"
+                width="100%"
+              >
+              <p>Tomorrow will be better. If not, I'll say it again.</p>
+              <cite>- Monkey D. Luffy</cite>
+            </blockquote>
+          </td>
+          <td width="33%">
+            <blockquote>
+              <img
+                src="IMAGES/graphics/becomefan2.jpg"
+                alt="crew on group pic"
+                width="100%"
+              >
+              <p>Being alone is more painful than getting hurt.</p>
+              <cite>- Monkey D. Luffy</cite>
+            </blockquote>
+          </td>
+          <td width="33%">
+            <blockquote>
+              <img
+                src="IMAGES/graphics/becomefan3.jpg"
+                alt="reminisce young luffy brothers"
+                width="100%"
+              >
+              <p>Anyone who tries to make everyone happy is admirable.</p>
+              <cite>- Monkey D. Luffy</cite>
+            </blockquote>
+          </td>
+        </tr>
+        <tr>
+          <td width="33%">
+            <blockquote>
+              <img
+                src="IMAGES/graphics/becomefan4.jpg"
+                alt="crew ready to sail"
+                width="100%"
+              >
+              <p>If you don't take risk, you can't create a future.</p>
+              <cite>- Monkey D. Luffy</cite>
+            </blockquote>
+          </td>
+          <td width="33%">
+            <blockquote>
+              <img
+                src="IMAGES/graphics/becomefan5.jpg"
+                alt="crew on the job"
+                width="100%"
+              >
+              <p>As long as I live I have infinite chance.</p>
+              <cite>- Monkey D. Luffy</cite>
+            </blockquote>
+          </td>
+          <td width="33%">
+            <!-- Empty third column for space -->
+          </td>
+        </tr>
+      </table>
     </section>
-    <section>
-        <audio autoplay loop hidden>
-          <source src="AUDIOS/OnePieceOST-BinksnoSake.mp3" type="audio/mpeg">
-        </audio>
+
+    <br>
+    <hr>
+    <br>
+
+    <section id="anime-reflection">
+      <article>
+        <div align="center">
+          <h1>~One Piece Life~</h1>
+          <p>
+            <em>Why this anime means more than just a great adventure.</em>
+          </p>
+        </div>
+
+        <br>
+        <hr>
+        <section id="what-makes-one-piece-special">
+          <h2>What Makes <em>One Piece</em> Special?</h2>
+
+          <p>
+            It's not just about watching the characters have a fun adventure,
+            nor is it about the dangerous seas, powerful enemies, or the
+            unfair World Government ruling from above.
+          </p>
+
+          <blockquote>
+            <p>
+              <em>
+                <strong>
+                  The way this anime makes me feel alive comes from their
+                  strength to fight for their lives and defend their friends.
+                </strong>
+                <br>
+                You truly feel like you're one of them.
+              </em>
+            </p>
+          </blockquote>
+
+          <br>
+
+          <h2>What is in it for you?</h2>
+          <p>
+            What you find in that world is <em>freedom</em>. Those who don't
+            understand it may judge "pirates" as nothing more than thieves,
+            but it isn't simply about treasure hunting or violence.
+          </p>
+          <p align="center">
+            <mark>
+              <strong>
+                <em>You can be a "pirate" of your own "freedom."</em>
+              </strong>
+            </mark>
+          </p>
+
+          <br>
+
+          <h2>What are you looking for?</h2>
+          <p>
+            They started weak and grew strong together. While their core values
+            never changed, their individual dreams remained distinct yet aligned.
+          </p>
+
+          <ul>
+            <li>One seeks the ultimate treasure.</li>
+            <li>One searches for recognition.</li>
+            <li>Others simply want to find a place to belong.</li>
+          </ul>
+
+          <br>
+
+          <p>
+            Although the world of <em>One Piece</em> differs from our own,
+            its core message remains constant.
+          </p>
+          <blockquote>
+            <p>
+              <strong>
+                "The treasure isn't what you are actually looking for —
+                it is the long adventure where you're not alone."
+              </strong>
+            </p>
+          </blockquote>
+        </section>
+        <br>
+        <br>
+        <hr>
+        <br>
+        <section id="mvp-area">
+          <h1 align="center">Best Character Goes to...!</h1>
+          <dl>
+            <dd align="center">
+              <p>
+                <h2>
+                  <mark>
+                    <em>
+                      Monkey D. Luffy
+                    </em>
+                  </mark>
+                </h2>
+              </p>
+            </dd>
+
+            <br>
+            <hr>
+            <hr>
+            <dt>
+              <h2>Why Luffy?</h2>
+            </dt>
+            <dd align="justify">
+              <p>
+                He can still smile even when everything around him becomes
+                confusing or difficult. He may not care about many things,
+                but his friends are what truly matter to him.
+              </p>
+              <p>
+                He has an ultimate goal — <em>The One Piece</em> — but he also
+                values the great adventure that comes along the way instead
+                of simply rushing toward the destination.
+              </p>
+              <p>
+                What makes him special to me is that he doesn't treat his
+                journey as something that ends with his own success.
+              </p>
+              <br>
+              <blockquote>
+                <p>
+                  <h3>
+                    He wants his crew to achieve their dreams alongside him.
+                  </h3>
+                </p>
+              </blockquote>
+              <br>
+            </dd>
+          </dl>
+        </section>
+        <hr>
+        <section id="meaning-of-one-piece">
+          <h2>What Does the "One Piece" Treasure Truly Represent?</h2>
+
+          <p>
+            There are countless theories about what the treasure could be,
+            but perhaps anything can become a treasure when enough meaning
+            is attached to it.
+          </p>
+          <p>
+            Much like reaching any meaningful goal, its true value comes from
+            the hard work required to attain it. A treasure can mean very
+            little if no effort was made to earn it.
+          </p>
+          <br>
+          <br>
+          <blockquote>
+            <h2>
+              <em>
+                "One Piece" could simply represent something
+                that seems unreachable yet grows closer with every step —
+                like a ship navigating forward through unpredictable seas.
+              </em>
+            </h2>
+          </blockquote>
+          <br>
+          <br>
+          <hr>
+          <hr>
+          <br>
+          <br>
+
+          <p align="center">
+            <ins>
+              Whatever the treasure may ultimately be, the journey toward it
+            is what gives the adventure meaning</ins>.——
+          </p>
+
+          <h3 align="center">
+            <em>
+              ——Prepare yourself, keep moving forward, and become stronger
+              than you were yesterday.
+            </em>
+          </h3>
+        </section>
+      </article>
+
+      <audio autoplay loop hidden>
+        <source
+          src="AUDIOS/OnePieceOST-BinksnoSake.mp3"
+          type="audio/mpeg"
+        >
+        Your browser does not support the audio element.
+      </audio>
     </section>
   </main>
-  <aside hidden>
-    <h3>Find the One Piece!</h3>
-    <span>(Navigation Links)</span>
-    <nav>
-      <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="becomefan.html">Become a Fellow O.P. Fan!</a></li>
-      </ul>
-    </nav>
-  </aside>
+
+  <br>
+  <br>
+  <hr>
+  <br>
+  <br>
+
   <footer>
-    <h3>Sail in Sea!</h3>
-    <span>(Navigation Links)</span>
+    <h2>Sail the Seas!</h2>
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="">Become a Fellow O.P. Fan!</a></li>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="about.html">About</a>
+        </li>
+        <li>
+          <a href="becomefan.html">Become a Fellow O.P. Fan!</a>
+        </li>
+        <li>
+          <a href="devilfruits.html">Find a Devil Fruit!</a>
+        </li>
       </ul>
     </nav>
-    <br>
-    <h3>Credits to respective owners:</h3>
-    <small>img1 : 
-      <a href="https://pin.it/5GO6Ji9fl"> Img Link</a>
-    </small>
-    <br>
-    <small>img2 : 
-      <a href="https://pin.it/s5HucfimM"> Img Link</a>
-    </small>
-    <br>
-    <small>img3 : 
-      <a href="https://pin.it/7xaYqwzB1"> Img Link</a>
-    </small>
-    <br>
-    <small>img4 : 
-      <a href="https://pin.it/1UTH4xvKv"> Img Link</a>
-    </small>
-    <br>
-    <small>img5 : 
-      <a href="https://pin.it/3DlM62CUT"> Img Link</a>
-    </small>
-    <br>
-    <h3>Credits to respective owner:</h3>
-    <small>Binks No Sake(SoundsTrack): 
-        <a href="https://youtu.be/cyGarA73Tcc?si=cbRYekhixN3tMtH9"> Soundtrack Link</a>
+
+    <section id="image-credits">
+      <h3>Image Credits</h3>
+      <ol>
+        <li>
+          Image 1:
+          <a href="https://pin.it/5GO6Ji9fl" target="_blank">
+            Source
+          </a>
+        </li>
+        <li>
+          Image 2:
+          <a href="https://pin.it/s5HucfimM" target="_blank">
+            Source
+          </a>
+        </li>
+        <li>
+          Image 3:
+          <a href="https://pin.it/7xaYqwzB1" target="_blank">
+            Source
+          </a>
+        </li>
+        <li>
+          Image 4:
+          <a href="https://pin.it/1UTH4xvKv" target="_blank">
+            Source
+          </a>
+        </li>
+        <li>
+          Image 5:
+          <a href="https://pin.it/3DlM62CUT" target="_blank">
+            Source
+          </a>
+        </li>
+      </ol>
+
+    </section>
+    <section id="audio-credits">
+      <h3>Audio Credit</h3>
+      <p>
+        <strong>Binks No Sake (Soundtrack):</strong>
+        <a
+          href="https://youtu.be/cyGarA73Tcc?si=cbRYekhixN3tMtH9"
+          target="_blank"
+        >
+          Soundtrack Source
+        </a>
+      </p>
+    </section>
+    
+    <small>
+      <p>
+        This fan page is created for educational and fan-made purposes.
+        All referenced media belongs to their respective owners.
+      </p>
     </small>
   </footer>
-</</html>
+</body>
+</html>
